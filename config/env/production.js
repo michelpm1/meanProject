@@ -1,7 +1,22 @@
 'use strict';
 
 module.exports = {
-	db: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://michelpm1:pewen123@ds057244.mongolab.com:57244/meantest',
+	db: {
+		uri: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://michelpm1:pewen123@ds057244.mongolab.com:57244/meantest',
+		options: {
+			user: '',
+			pass: ''
+		}
+	},
+	log: {
+		// Can specify one of 'combined', 'common', 'dev', 'short', 'tiny'
+		format: 'combined',
+		// Stream defaults to process.stdout
+		// Uncomment to enable logging to a log on the file system
+		options: {
+			stream: 'access.log'
+		}
+	},
 	assets: {
 		lib: {
 			css: [
