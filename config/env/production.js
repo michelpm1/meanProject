@@ -2,7 +2,7 @@
 
 module.exports = {
 	db: {
-		uri: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://michelpm1:pewen123@ds057244.mongolab.com:57244/meantest',
+		uri: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://michelpm1:pewen123@ds051524.mongolab.com:51524/heroku_spn3t4dp',
 		options: {
 			user: '',
 			pass: ''
